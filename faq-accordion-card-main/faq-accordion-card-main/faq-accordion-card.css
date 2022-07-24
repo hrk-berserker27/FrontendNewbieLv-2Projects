@@ -149,7 +149,6 @@ span:hover {
         width: 330px;
         height: 530px;
         position: relative;
-        box-shadow: none;
         padding-left: 1.7em;
         padding-right: 1.7em;
     }
@@ -171,10 +170,11 @@ span:hover {
         padding: 0;
     }
 
-    .faq header {
+    .faq h1 {
         font-size: 2em;
         text-align: center;
         padding-top: 0;
+        margin-bottom: 1em;
     }
 
     main section {
@@ -189,8 +189,9 @@ span:hover {
 
     .image {
         transform: translateY(-7.5em);
-        background-size: 93%;
-        background-position: 0.5em 1em;
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-size: 95%;
+        background-position: 0.2em 11.2em;
     }
 
     .women-container {
