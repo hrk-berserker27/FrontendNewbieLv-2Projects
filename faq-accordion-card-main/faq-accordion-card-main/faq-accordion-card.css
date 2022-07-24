@@ -34,7 +34,7 @@ main {
     background-color: white;
     border-radius: 1.5em;
     justify-content: center;
-    height: 400px;
+    height: 450px;
     width: 800px;
     box-shadow: 0px 20px 50px hsl(266, 69%, 28%);
 }
@@ -80,25 +80,25 @@ main section {
     display: none;
 }
 
-header {
-    font-size: 1.5rem;
+h1 {
     font-weight: var(--fontWeight2);
-    margin-bottom: 1rem;
-    padding-top: 2em;
+    margin-bottom: 1.7rem;
+    padding-top: 2.2em;
+    font-size: 2em;
 }
 
 .image {
     position: relative;
     background: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-size: 170%;
-    background-position-x: -22em;
-    background-position-y: -11em;
+    background-size: 180%;
+    background-position-x: -24em;
+    background-position-y: -10.5em;
 }
 
 .box {
     position: absolute;
-    top: 9em;
+    top: 10em;
     left: -5.7em;
     z-index: 2;
 }
@@ -106,15 +106,14 @@ header {
 .women-container {
     overflow: hidden;
     height: 100%;
-    padding-top: 3em;
-    padding-bottom: 1.5em;
+    padding-top: 4.5em;
 }
 
 .women {
     display: block;
     width: 100%;
-    height: 90%;
-    transform: translateX(-70px);
+    height: 80%;
+    transform: translateX(-60px);
 }
 
 span {
