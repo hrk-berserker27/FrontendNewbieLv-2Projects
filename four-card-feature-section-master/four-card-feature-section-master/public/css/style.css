@@ -60,7 +60,7 @@ main section img {
 @media (min-width: 1200px) {
   .border-style-1 {
     grid-row: 2/4;
-    grid-column: 2/4;
+    grid-column: 3/3;
   }
 }
 
