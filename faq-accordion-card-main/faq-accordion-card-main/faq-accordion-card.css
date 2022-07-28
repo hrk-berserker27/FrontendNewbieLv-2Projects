@@ -34,8 +34,8 @@ main {
     background-color: white;
     border-radius: 1.5em;
     justify-content: center;
-    height: 450px;
-    width: 800px;
+    height: 500px;
+    width: 900px;
     box-shadow: 0px 20px 50px hsl(266, 69%, 28%);
 }
 
@@ -44,27 +44,22 @@ main section {
     width: 50%;
 }
 
+.faq {
+    overflow: hidden;
+}
+
 .container {
     font-size: var(--fontSize);
     border-bottom: 1px solid var(--dividerColor);
     padding-top: 1em;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
 }
 
 .content {
-    padding-right: 5.5em;
-}
-
-.question span {
-    transition: all ease-in 200ms;
+    padding-right: 6em;
 }
 
 .question {
     color: var(--questionColor);
-    padding-bottom: 1rem;
-
 }
 
 .question:hover {
@@ -76,8 +71,6 @@ main section {
     color: var(--answerColor);
     padding-bottom: 1rem;
     font-size: 11px;
-    transition: all ease-in 1s;
-    display: none;
 }
 
 h1 {
@@ -91,14 +84,14 @@ h1 {
     position: relative;
     background: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-size: 180%;
-    background-position-x: -24em;
-    background-position-y: -10.5em;
+    background-size: 185%;
+    background-position-x: -28.2em;
+    background-position-y: -13em;
 }
 
 .box {
     position: absolute;
-    top: 10em;
+    top: 12em;
     left: -5.7em;
     z-index: 2;
 }
@@ -113,30 +106,27 @@ h1 {
     display: block;
     width: 100%;
     height: 80%;
-    transform: translateX(-60px);
+    transform: translateX(-70px);
 }
 
-span {
-    display: block;
-    position: absolute;
-    left: 95%;
-    transition: all ease-in 100ms;
+.container summary {
+    list-style-image: url(images/icon-arrow-down.svg);
+    direction: rtl;
+    position: relative;
+    /*The trick*/
 }
 
-span:hover~.answer {
-    display: block;
+.container summary p {
+    direction: ltr;
+    background-color: red;
+    transform: translateY(-100%);
+    background: transparent;
 }
 
-span:hover+.question {
-    color: var(--activeContainerQuestionColor);
+details[open]>summary {
     font-weight: var(--fontWeight2);
-    padding-bottom: 0.7em;
 }
 
-span:hover {
-    cursor: pointer;
-    transform: rotate(180deg);
-}
 
 @media screen and (min-width: 200px) and (max-width: 875px) {
 
